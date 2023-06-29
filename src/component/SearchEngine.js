@@ -42,7 +42,7 @@ export default function SearchEngine() {
             <ul>
               <li>Temperature : {Math.round(weather.main.temp)}℃</li>
               <li>Humidity : {weather.main.humidity}%</li>
-              <li>Description : {weather.description}</li>
+              <li>Description : {weather.weather[0].description}</li>
               <li>Wind speed : {Math.round(weather.wind.speed)} km/h</li>
               <li>
                 <img
