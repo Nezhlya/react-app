@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./SearchEngine.css";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
@@ -27,8 +28,9 @@ export default function SearchEngine() {
         type="search"
         placeholder="Enter city name"
         onChange={updateCity}
+        className="form"
       />
-      <input type="submit" value="Search" />
+      <input type="submit" value="Search" className="form" />
     </form>
   );
 
@@ -37,19 +39,21 @@ export default function SearchEngine() {
       <div>
         {form}
         {weather && (
-          <div>
-            <h2>{weather.name}</h2>
-            <ul>
+          <div className="cityInfo">
+            <div>
+              <h1>{weather.name}</h1>
+              <img
+                src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+                alt={weather.weather[0].description}
+              />
+
+            </div>
+
+            <ul className="cityProps">
               <li>Temperature : {Math.round(weather.main.temp)}℃</li>
               <li>Humidity : {weather.main.humidity}%</li>
               <li>Description : {weather.weather[0].description}</li>
               <li>Wind speed : {Math.round(weather.wind.speed)} km/h</li>
-              <li>
-                <img
-                  src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
-                  alt={weather.weather[0].description}
-                />
-              </li>
             </ul>
           </div>
         )}

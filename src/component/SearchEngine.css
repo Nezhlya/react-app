@@ -1,0 +1,15 @@
+.form{
+    margin:10px;
+    padding: 10px;
+}
+.cityProps{
+    list-style: none;
+    line-height: 30px;
+    font-size: 20px;
+    
+}
+.cityInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
