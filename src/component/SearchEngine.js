@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./SearchEngine.css";
+import TemperatureConvertion from "./TemperatureConvertion";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
@@ -46,11 +47,11 @@ export default function SearchEngine() {
                 src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
                 alt={weather.weather[0].description}
               />
-
             </div>
-
             <ul className="cityProps">
-              <li>Temperature : {Math.round(weather.main.temp)}℃</li>
+              <li>
+                <TemperatureConvertion celsius={weather.main.temp}/>
+              </li>
               <li>Humidity : {weather.main.humidity}%</li>
               <li>Description : {weather.weather[0].description}</li>
               <li>Wind speed : {Math.round(weather.wind.speed)} km/h</li>
