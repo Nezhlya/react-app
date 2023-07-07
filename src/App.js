@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App container">
       <header className="App-header">
-        <SearchEngine />
+        <SearchEngine value="Hell" />
         <small>
           <a
             href="https://github.com/Nezhlya/react-app"
