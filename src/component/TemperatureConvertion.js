@@ -19,26 +19,27 @@ export default function TemperatureConvertion(props) {
 
   if (unit === "celsius") {
     return (
-      <div className="SearchEngine">
+      <div className="convertion">
         <span>{Math.round(props.celsius)}</span>
-        <span>
-          ° C |{" "}
+        <span className="unit"><sup> °C |</sup>
+         
           <a href="/" onClick={showFahrenheit}>
-            °F
+            <sup> °F</sup>
+           
           </a>
         </span>
       </div>
     );
   } else {
     return (
-      <div>
+      <div className="convertion">
         <span>{Math.round(fahrenheit())}</span>
-        <span>
-          <a href="/" onClick={showCelsius}>
-            {" "}
-            °C
-          </a>{" "}
-          | °F
+        <span className="unit">
+          <a href="/" onClick={showCelsius}><sup>
+            °C </sup>
+            
+          </a><sup>
+          | °F</sup>
         </span>
       </div>
     );

@@ -13,4 +13,20 @@
     justify-content: center;
     align-items: center;
 }
- 
+.cityInfo h1{
+    font-size: 40px;
+}
+
+ .unit {
+    font-size: 18px;
+    font-weight: 500;
+
+ }
+ .unit a{
+    text-decoration: none;
+ }
+ .convertion {
+    font-size: 30px;
+    font-weight: 700;
+    margin:10px
+ }
