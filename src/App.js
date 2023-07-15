@@ -5,11 +5,11 @@ import SearchEngine from "./component/SearchEngine.js";
 
 export default function App() {
   return (
-    <div className="App container">
-      <header className="App-header">
-        <SearchEngine value="Hell" />
+    <div className="App">
+      <header className="container">
+        <SearchEngine defaultCity= "Love" />
         <small>
-          <a
+          <a 
             href="https://github.com/Nezhlya/react-app"
             target="_black"
             rel="noreferrer"

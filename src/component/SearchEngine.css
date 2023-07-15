@@ -1,33 +1,48 @@
 
-.form{
-    margin:10px;
-    padding: 10px;
+.cityInfo {
+background-color: rgb(179, 185, 190, 0.3);
+padding: 10px;
+border-radius: 10px;
+    
+}
+.cityInfo h1{
+    font-size: 50px;
+    
+}
+.ForecastDay {
+     text-align: center;
+     padding: 10px;
 }
 .cityProps{
     list-style: none;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 17px;
     
 }
-.cityInfo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mainTemp {
+    font-size: 30px;
+    margin:10px
 }
-.cityInfo h1{
-    font-size: 40px;
-}
-
- .unit {
-    font-size: 18px;
-    font-weight: 500;
-
- }
- .unit a{
-    text-decoration: none;
- }
  .convertion {
     font-size: 30px;
     font-weight: 700;
     margin:10px
  }
+ .unit a{
+    text-decoration: none;
+color:black;
+ opacity: 60%;
+ font-size: 25px;
+ }
+  .unit a:hover{
+   opacity:100%
+ }
+ .form{
+    margin-left: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+ }
+
+.forecastArea{
+    padding:20px;
+}
