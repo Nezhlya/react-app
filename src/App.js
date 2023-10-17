@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <header className="container">
-        <SearchEngine defaultCity= "Love" />
+        <SearchEngine defaultCity= "Arnhem" />
         <small>
           <a 
             href="https://github.com/Nezhlya/react-app"
